@@ -1,6 +1,6 @@
 Examples to deploy Remix Vite application to serverless platforms
 
-- [x] Cloudflare Workers https://remix-vite-deploy-cloudflare-workers.hiro18181.workers.dev
+- [x] Cloudflare Workers https://remix-vite-deploy.hiro18181.workers.dev
 - [x] Vercel Edge https://remix-vite-deploy-edge.vercel.app
 - [x] Vercel Serverless https://remix-vite-deploy-serverless.vercel.app
 

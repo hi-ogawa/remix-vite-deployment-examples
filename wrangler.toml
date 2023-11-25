@@ -1,4 +1,4 @@
-name = "remix-vite-deploy-cloudflare-workers"
+name = "remix-vite-deploy"
 
 main = "./app/adapters/cloudflare-workers.ts"
 assets = "./build/client"
