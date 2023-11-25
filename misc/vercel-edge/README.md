@@ -3,7 +3,7 @@
 script for vercel-edge deployment
 
 ```sh
-# initial project setup
+# initial project setup (run commands in this sub directory)
 vercel projects add remix-vite-deploy-edge
 vercel link -p remix-vite-deploy-edge
 ```

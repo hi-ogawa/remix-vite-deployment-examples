@@ -5,14 +5,13 @@ set -eu -o pipefail
 #   project.json
 #   output/
 #     config.json
-#     static/              = dist/client
+#     static/              = build/client
 #     functions/
 #       index.func/
 #         .vc-config.json
-#         index.js         = dist/server/index.js
+#         index.js         = app/adapters/vercel-serverless.ts
 
-this_dir="$(dirname "${BASH_SOURCE[0]}")"
-cd "$this_dir"
+cd "$(dirname "${BASH_SOURCE[0]}")"
 
 # clean
 rm -rf .vercel/output
