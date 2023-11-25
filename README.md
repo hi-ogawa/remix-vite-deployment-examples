@@ -1,8 +1,8 @@
 Examples to deploy Remix Vite app to various serverless platforms
 
 - [x] Cloudflare Workers https://remix-vite-deploy-cloudflare-workers.hiro18181.workers.dev
+- [x] Vercel Edge https://remix-vite-deploy-edge.vercel.app
 - [ ] Vercel Serverless
-- [ ] Vercel Edge
 
 ```sh
 pnpm dev
@@ -11,8 +11,9 @@ pnpm build
 pnpm cloudflare-workers-preview
 pnpm cloudflare-workers-release
 
-pnpm vercel-edge-build
-pnpm vercel-edge-release
+# see misc/vercel-edge/README.md for initial setup
+pnpm build-vercel-edge
+pnpm release-vercel-edge
 
 pnpm vercel-serverless-build
 pnpm vercel-serverless-release

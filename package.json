@@ -7,7 +7,9 @@
     "dev": "vite dev",
     "build": "vite build && vite build --ssr",
     "cloudflare-workers-preview": "wrangler dev",
-    "cloudflare-workers-release": "wrangler deploy"
+    "cloudflare-workers-release": "wrangler deploy",
+    "build-vercel-edge": "bash misc/vercel-edge/build.sh",
+    "release-vercel-edge": "vercel deploy --prebuilt . --prod"
   },
   "dependencies": {
     "@remix-run/node": "0.0.0-nightly-dda449a-20231124",
@@ -23,6 +25,7 @@
     "@remix-run/server-runtime": "^2.3.1",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
+    "esbuild": "^0.19.7",
     "eslint": "^8.38.0",
     "typescript": "^5.1.6",
     "vite": "^5.0.0",
