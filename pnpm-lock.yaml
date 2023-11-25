@@ -28,6 +28,9 @@ devDependencies:
   '@hattip/adapter-node':
     specifier: ^0.0.35
     version: 0.0.35
+  '@remix-run/cloudflare-pages':
+    specifier: ^2.3.1
+    version: 2.3.1(@cloudflare/workers-types@4.20231121.0)(typescript@5.3.2)
   '@remix-run/dev':
     specifier: 0.0.0-nightly-dda449a-20231124
     version: 0.0.0-nightly-dda449a-20231124(@remix-run/serve@0.0.0-nightly-dda449a-20231124)(typescript@5.3.2)(vite@5.0.2)
@@ -481,6 +484,12 @@ packages:
       to-fast-properties: 2.0.0
     dev: true
 
+  /@cloudflare/kv-asset-handler@0.1.3:
+    resolution: {integrity: sha512-FNcunDuTmEfQTLRLtA6zz+buIXUHj1soPvSWzzQFBC+n2lsy+CGf/NIrR3SEPCmsVNQj70/Jx2lViCpq+09YpQ==}
+    dependencies:
+      mime: 2.6.0
+    dev: true
+
   /@cloudflare/kv-asset-handler@0.2.0:
     resolution: {integrity: sha512-MVbXLbTcAotOPUj0pAMhVtJ+3/kFkwJqc5qNOleOZTv6QkZZABDMS21dSrSlVswEHwrpWC03e4fWytjqKvuE2A==}
     dependencies:
@@ -531,6 +540,10 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@cloudflare/workers-types@4.20231121.0:
+    resolution: {integrity: sha512-+kWfpCkqiepwAKXyHoE0gnkPgkLhz0/9HOBIGhHRsUvUKvhUtm3mbqqoGRWgF1qcjzrDUBbrrOq4MYHfFtc2RA==}
+    dev: true
 
   /@emotion/hash@0.9.1:
     resolution: {integrity: sha512-gJB6HLm5rYwSLI6PQa+X1t5CFGrv1J1TWG+sOyMCeKz2ojaj6Fnl/rZEspogG+cvqbt4AE/2eIyD2QfLKTBNlQ==}
@@ -1591,6 +1604,37 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@remix-run/cloudflare-pages@2.3.1(@cloudflare/workers-types@4.20231121.0)(typescript@5.3.2):
+    resolution: {integrity: sha512-A+YxHIEWnaC/tsaNMSDoRBqOTMQG3T+nl1n8an7YARH85Wh1+igriuCLtl1hHS6TAUaVuGSCFxNw+1pjJp92VA==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      '@cloudflare/workers-types': ^4.0.0
+      typescript: ^5.1.0
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      '@cloudflare/workers-types': 4.20231121.0
+      '@remix-run/cloudflare': 2.3.1(@cloudflare/workers-types@4.20231121.0)(typescript@5.3.2)
+      typescript: 5.3.2
+    dev: true
+
+  /@remix-run/cloudflare@2.3.1(@cloudflare/workers-types@4.20231121.0)(typescript@5.3.2):
+    resolution: {integrity: sha512-g4Y/JOpWt26vaH89N07LNG05AIkeeDSy1/BvfLUQBkrrZrwzPozSFEBObPZvNDhPzQlXmTCZZuYHXf7FcLh8GA==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      '@cloudflare/workers-types': ^4.0.0
+      typescript: ^5.1.0
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      '@cloudflare/kv-asset-handler': 0.1.3
+      '@cloudflare/workers-types': 4.20231121.0
+      '@remix-run/server-runtime': 2.3.1(typescript@5.3.2)
+      typescript: 5.3.2
+    dev: true
 
   /@remix-run/dev@0.0.0-nightly-dda449a-20231124(@remix-run/serve@0.0.0-nightly-dda449a-20231124)(typescript@5.3.2)(vite@5.0.2):
     resolution: {integrity: sha512-symxG3ozfrrff7yDsI42ch0gsQGafGcCQAlA821AyWLyMA/ikAN8zkiwCmM5v/NuDX0vDsoruC2Wmn+eFVb3Xw==}
@@ -5262,6 +5306,12 @@ packages:
     resolution: {integrity: sha512-x0Vn8spI+wuJ1O6S7gnbaQg8Pxh4NNHb7KSINmEWKiPE4RKOplvijn+NkmYmmRgP68mc70j2EbeTFRsrswaQeg==}
     engines: {node: '>=4'}
     hasBin: true
+
+  /mime@2.6.0:
+    resolution: {integrity: sha512-USPkMeET31rOMiarsBNIHZKLGgvKc/LrjofAnBlOttf5ajRvqiRA8QsenbcooctK6d6Ts6aqZXBA+XbkKthiQg==}
+    engines: {node: '>=4.0.0'}
+    hasBin: true
+    dev: true
 
   /mime@3.0.0:
     resolution: {integrity: sha512-jSCU7/VB1loIWBZe14aEYHU/+1UMEHoaO7qxCOVJOw9GgH72VAWppxNcjU+x9a2k3GSIBXNKxXQFqRvvZ7vr3A==}

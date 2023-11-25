@@ -8,6 +8,9 @@
     "build": "vite build && vite build --ssr",
     "preview-cloudflare-workers": "wrangler dev",
     "release-cloudflare-workers": "wrangler deploy",
+    "build-cloudflare-pages": "bash misc/cloudflare-pages/build.sh",
+    "preview-cloudflare-pages": "wrangler pages dev ./build/client --compatibility-date=2023-04-20",
+    "release-cloudflare-pages": "wrangler pages deploy ./build/client --commit-dirty --branch main --project-name remix-vite-deploy-pages",
     "build-vercel-edge": "bash misc/vercel-edge/build.sh",
     "release-vercel-edge": "vercel deploy --prebuilt misc/vercel-edge --prod",
     "build-vercel-serverless": "bash misc/vercel-serverless/build.sh",
@@ -23,6 +26,7 @@
   },
   "devDependencies": {
     "@hattip/adapter-node": "^0.0.35",
+    "@remix-run/cloudflare-pages": "^2.3.1",
     "@remix-run/dev": "0.0.0-nightly-dda449a-20231124",
     "@remix-run/eslint-config": "0.0.0-nightly-dda449a-20231124",
     "@remix-run/server-runtime": "^2.3.1",
