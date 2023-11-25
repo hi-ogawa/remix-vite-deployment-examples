@@ -1,5 +1,7 @@
 # vercel
 
+(mostly copied from https://github.com/hi-ogawa/vite-plugins/tree/main/examples/ssr/misc/vercel)
+
 script for vercel serverless deployment
 
 ```sh

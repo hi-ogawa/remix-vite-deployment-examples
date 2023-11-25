@@ -1,5 +1,7 @@
 # vercel-edge
 
+(mostly copied from https://github.com/hi-ogawa/vite-plugins/tree/main/examples/ssr/misc/vercel-edge)
+
 script for vercel-edge deployment
 
 ```sh
