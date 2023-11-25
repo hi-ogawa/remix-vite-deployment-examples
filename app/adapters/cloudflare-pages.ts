@@ -1,10 +1,5 @@
-import { createPagesFunctionHandler } from "@remix-run/cloudflare-pages";
-import { ServerBuild } from "@remix-run/server-runtime";
+import { remixHandler } from "./base.js";
 
-// @ts-ignore
-import * as build from "../../build/server/index.js";
-
-export const onRequest = createPagesFunctionHandler({
-  build: build as any as ServerBuild,
-  mode: "production",
-});
+export function onRequest(ctx: { request: Request }) {
+  return remixHandler(ctx.request);
+}

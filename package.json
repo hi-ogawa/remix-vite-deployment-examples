@@ -26,7 +26,6 @@
   },
   "devDependencies": {
     "@hattip/adapter-node": "^0.0.35",
-    "@remix-run/cloudflare-pages": "^2.3.1",
     "@remix-run/dev": "0.0.0-nightly-dda449a-20231124",
     "@remix-run/eslint-config": "0.0.0-nightly-dda449a-20231124",
     "@remix-run/server-runtime": "^2.3.1",
