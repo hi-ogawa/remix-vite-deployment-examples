@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build && vite build --ssr",
-    "preview-cloudflare-workers": "wrangler dev",
-    "release-cloudflare-workers": "wrangler deploy",
+    "preview-cloudflare-workers": "cd misc/cloudflare-workers && wrangler dev",
+    "release-cloudflare-workers": "cd misc/cloudflare-workers && wrangler deploy",
     "build-vercel-edge": "bash misc/vercel-edge/build.sh",
     "release-vercel-edge": "vercel deploy --prebuilt misc/vercel-edge --prod",
     "build-vercel-serverless": "bash misc/vercel-serverless/build.sh",
