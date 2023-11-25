@@ -12,6 +12,7 @@ pnpm build
 pnpm preview-cloudflare-workers
 pnpm release-cloudflare-workers
 
+# see misc/cloudflare-pages/README.md for initial setup
 pnpm build-cloudflare-pages
 pnpm preview-cloudflare-pages
 pnpm release-cloudflare-pages
