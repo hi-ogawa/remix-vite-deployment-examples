@@ -1,0 +1,8 @@
+name = "remix-vite-deploy-cloudflare-workers"
+
+main = "./app/adapters/cloudflare-workers.ts"
+assets = "./build/client"
+workers_dev = true
+compatibility_date = "2023-04-20"
+# might be easier to debug without minify
+minify = true
