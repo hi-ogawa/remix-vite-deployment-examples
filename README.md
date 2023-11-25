@@ -8,8 +8,8 @@ Examples to deploy Remix Vite app to various serverless platforms
 pnpm dev
 pnpm build
 
-pnpm cloudflare-workers-preview
-pnpm cloudflare-workers-release
+pnpm preview-cloudflare-workers
+pnpm release-cloudflare-workers
 
 # see misc/vercel-edge/README.md for initial setup
 pnpm build-vercel-edge
