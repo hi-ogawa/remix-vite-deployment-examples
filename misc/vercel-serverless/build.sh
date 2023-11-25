@@ -30,10 +30,9 @@ rm -rf .vercel/output/static/.vite
 mkdir -p .vercel/output/functions/index.func
 cp .vc-config.json .vercel/output/functions/index.func/.vc-config.json
 
-# TODO: exclude unnecessary deps
-# - react-xxx.development
-# - node-fetch-native
+# TODO: exclude unnecessary hattip node-fetch-native polyfills?
 npx esbuild ../../app/adapters/vercel-serverless.ts \
   --outfile=.vercel/output/functions/index.func/index.js \
   --metafile=../../build/esbuild-metafile-vercel-serverless.json \
+  --define:process.env.NODE_ENV='"production"' \
   --bundle --minify --format=cjs --platform=node
