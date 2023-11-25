@@ -1,4 +1,5 @@
 import {
+  Link,
   Links,
   LiveReload,
   Meta,
@@ -17,6 +18,20 @@ export default function App() {
         <Links />
       </head>
       <body>
+        <a href="https://github.com/remix-run/remix/" target="_blank">
+          Source code
+        </a>
+        <ul>
+          <li>
+            <Link to="/">root</Link>
+          </li>
+          <li>
+            <Link to="/page1">page1</Link>
+          </li>
+          <li>
+            <Link to="/page2">page2</Link>
+          </li>
+        </ul>
         <Outlet />
         <ScrollRestoration />
         <Scripts />

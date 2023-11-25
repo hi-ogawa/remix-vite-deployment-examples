@@ -1,3 +1,24 @@
+Examples to deploy Remix Vite app to
+
+- [ ] Cloudflare Workers
+- [ ] Vercel Serverless
+- [ ] Vercel Edge
+
+```sh
+pnpm dev
+
+pnpm build:cloudflare-workers
+pnpm release:cloudflare-workers
+
+pnpm build:vercel-edge
+pnpm release:vercel-edge
+
+pnpm build:vercel-serverless
+pnpm release:vercel-serverless
+```
+
+---
+
 # templates/unstable-vite
 
 ⚠️ Remix support for Vite is unstable and not recommended for production.
