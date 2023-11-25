@@ -1,6 +1,7 @@
 Examples to deploy Remix Vite application to serverless platforms
 
 - [x] Cloudflare Workers https://remix-vite-deploy.hiro18181.workers.dev
+- [x] Cloudflare Pages https://remix-vite-deploy-pages.pages.dev/
 - [x] Vercel Edge https://remix-vite-deploy-edge.vercel.app
 - [x] Vercel Serverless https://remix-vite-deploy-serverless.vercel.app
 
@@ -10,6 +11,10 @@ pnpm build
 
 pnpm preview-cloudflare-workers
 pnpm release-cloudflare-workers
+
+pnpm build-cloudflare-pages
+pnpm preview-cloudflare-pages
+pnpm release-cloudflare-pages
 
 # see misc/vercel-edge/README.md for initial setup
 pnpm build-vercel-edge
