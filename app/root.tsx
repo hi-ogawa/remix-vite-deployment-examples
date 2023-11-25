@@ -18,7 +18,10 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <a href="https://github.com/hi-ogawa/remix-vite-deployment-examples" target="_blank">
+        <a
+          href="https://github.com/hi-ogawa/remix-vite-deployment-examples"
+          target="_blank"
+        >
           Source code
         </a>
         <ul>
