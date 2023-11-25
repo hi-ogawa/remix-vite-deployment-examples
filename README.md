@@ -20,6 +20,12 @@ pnpm build-vercel-serverless
 pnpm release-vercel-serverless
 ```
 
+# references
+
+- https://vercel.com/docs/build-output-api/v3
+- https://developers.cloudflare.com/workers/
+- https://github.com/hi-ogawa/demo-remix-unstable-vite-cloudflare-workers
+
 ---
 
 # templates/unstable-vite

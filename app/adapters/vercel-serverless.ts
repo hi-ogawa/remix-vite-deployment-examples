@@ -1,4 +1,4 @@
 import { createMiddleware } from "@hattip/adapter-node";
-import { baseHandler } from "./base";
+import { remixHandler } from "./base";
 
-export default createMiddleware((ctx) => baseHandler(ctx.request));
+export default createMiddleware((ctx) => remixHandler(ctx.request));

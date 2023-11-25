@@ -6,7 +6,7 @@ import {
 // @ts-ignore
 import * as build from "../../build/server/index.js";
 
-export const baseHandler = createRequestHandler(
+export const remixHandler = createRequestHandler(
   build as any as ServerBuild,
   "production"
 );

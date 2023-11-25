@@ -1,9 +1,3 @@
-import {
-  type ServerBuild,
-  createRequestHandler,
-} from "@remix-run/server-runtime";
+import { remixHandler } from "./base.js";
 
-// @ts-ignore
-import * as build from "../../build/server/index.js";
-
-export default createRequestHandler(build as any as ServerBuild, "production");
+export default remixHandler;
