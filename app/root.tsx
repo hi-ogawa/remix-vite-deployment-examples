@@ -18,21 +18,12 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
-          <a
-            href="https://github.com/hi-ogawa/remix-vite-deployment-examples"
-            target="_blank"
-          >
-            Source code
-          </a>
-          <span
-            ref={(el) => {
-              if (el) el.textContent = "hydrated";
-            }}
-            style={{ opacity: 0.5 }}
-          >
-          </span>
-        </div>
+        <a
+          href="https://github.com/hi-ogawa/remix-vite-deployment-examples"
+          target="_blank"
+        >
+          Source code
+        </a>
         <ul>
           <li>
             <Link to="/">root</Link>
