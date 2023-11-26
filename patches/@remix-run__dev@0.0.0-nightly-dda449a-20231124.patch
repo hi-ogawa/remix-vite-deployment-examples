@@ -1,24 +1,8 @@
 diff --git a/dist/vite/node/adapter.js b/dist/vite/node/adapter.js
-index fea1dbd3ceb48b6bb27cc4277a8a24221282f1c3..ae833284fd0b29b9ddbd2f650eb1327dbb85a826 100644
+index fea1dbd3ceb48b6bb27cc4277a8a24221282f1c3..7569af6398289e520b75315875dafa3b6a274c6d 100644
 --- a/dist/vite/node/adapter.js
 +++ b/dist/vite/node/adapter.js
-@@ -19,7 +19,7 @@ var node = require('@remix-run/node');
- var serverRuntime = require('@remix-run/server-runtime');
- var invariant = require('../../invariant.js');
- 
--node.installGlobals();
-+// node.installGlobals();
- function createHeaders(requestHeaders) {
-   let headers = new Headers();
-   for (let [key, values] of Object.entries(requestHeaders)) {
-@@ -41,12 +41,12 @@ function createRequest(req, res) {
-   let origin = req.headers.origin && "null" !== req.headers.origin ? req.headers.origin : `http://${req.headers.host}`;
-   invariant["default"](req.url, 'Expected "req.url" to be defined');
-   let url = new URL(req.url, origin);
--  let controller = new AbortController();
--  res.on("close", () => controller.abort());
-+  // let controller = new AbortController();
-+  // res.on("close", () => controller.abort());
+@@ -46,7 +46,7 @@ function createRequest(req, res) {
    let init = {
      method: req.method,
      headers: createHeaders(req.headers),
