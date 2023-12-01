@@ -4,7 +4,7 @@ import type { EntryContext } from "@remix-run/server-runtime";
 import { RemixServer } from "@remix-run/react";
 import isbot from "isbot";
 
-// @ts-ignore force "browser" export on node, but no typing available yet
+// force "browser" export on nodejs with manual typing override (see env.d.ts)
 import { renderToReadableStream } from "react-dom/server.browser";
 
 export default async function handleRequest(
