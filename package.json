@@ -17,18 +17,18 @@
     "release-vercel-serverless": "vercel deploy --prebuilt misc/vercel-serverless --prod"
   },
   "dependencies": {
-    "@remix-run/node": "0.0.0-nightly-dda449a-20231124",
-    "@remix-run/react": "0.0.0-nightly-dda449a-20231124",
-    "@remix-run/serve": "0.0.0-nightly-dda449a-20231124",
+    "@remix-run/node": "0.0.0-nightly-a9e0102-20231130",
+    "@remix-run/react": "0.0.0-nightly-a9e0102-20231130",
+    "@remix-run/serve": "0.0.0-nightly-a9e0102-20231130",
     "isbot": "^3.6.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@hattip/adapter-node": "^0.0.35",
-    "@remix-run/dev": "0.0.0-nightly-dda449a-20231124",
-    "@remix-run/eslint-config": "0.0.0-nightly-dda449a-20231124",
-    "@remix-run/server-runtime": "^2.3.1",
+    "@remix-run/dev": "0.0.0-nightly-a9e0102-20231130",
+    "@remix-run/eslint-config": "0.0.0-nightly-a9e0102-20231130",
+    "@remix-run/server-runtime": "0.0.0-nightly-a9e0102-20231130",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
     "esbuild": "^0.19.7",
