@@ -34,4 +34,5 @@ npx esbuild ../../app/adapters/vercel-serverless.ts \
   --outfile=.vercel/output/functions/index.func/index.mjs \
   --metafile=../../build/esbuild-metafile-vercel-serverless.json \
   --define:process.env.NODE_ENV='"production"' \
+  --banner:js="import { createRequire } from 'module'; const require = createRequire(import.meta.url);" \
   --bundle --minify --format=esm --platform=node
