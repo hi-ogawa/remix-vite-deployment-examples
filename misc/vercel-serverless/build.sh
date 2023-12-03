@@ -9,7 +9,7 @@ set -eu -o pipefail
 #     functions/
 #       index.func/
 #         .vc-config.json
-#         index.js         = app/adapters/vercel-serverless.ts
+#         index.mjs         = app/adapters/vercel-serverless.ts
 
 cd "$(dirname "${BASH_SOURCE[0]}")"
 
@@ -31,7 +31,7 @@ cp .vc-config.json .vercel/output/functions/index.func/.vc-config.json
 
 # TODO: exclude unnecessary hattip node-fetch-native polyfills?
 npx esbuild ../../app/adapters/vercel-serverless.ts \
-  --outfile=.vercel/output/functions/index.func/index.js \
+  --outfile=.vercel/output/functions/index.func/index.mjs \
   --metafile=../../build/esbuild-metafile-vercel-serverless.json \
   --define:process.env.NODE_ENV='"production"' \
-  --bundle --minify --format=cjs --platform=node
+  --bundle --minify --format=esm --platform=node

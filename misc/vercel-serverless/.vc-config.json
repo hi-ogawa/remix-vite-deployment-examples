@@ -1,6 +1,6 @@
 {
   "runtime": "nodejs18.x",
-  "handler": "index.js",
+  "handler": "index.mjs",
   "launcherType": "Nodejs",
   "regions": ["hnd1"]
 }
