@@ -29,7 +29,6 @@ rm -rf .vercel/output/static/.vite
 mkdir -p .vercel/output/functions/index.func
 cp .vc-config.json .vercel/output/functions/index.func/.vc-config.json
 
-# TODO: exclude unnecessary hattip node-fetch-native polyfills?
 npx esbuild ../../app/adapters/vercel-serverless.ts \
   --outfile=.vercel/output/functions/index.func/index.mjs \
   --metafile=../../build/esbuild-metafile-vercel-serverless.json \
